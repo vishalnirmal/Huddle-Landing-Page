@@ -2,34 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body{
     background: hsl(257, 40%, 49%) url("./images/bg-desktop.svg") no-repeat;
+    background-size: contain;
     color: white;
     font-size: 16px;
-    /* background-size: 100%; */
 }
 .main{
-    margin: 25px 35px;
     display: grid;
     grid-template-rows: auto auto auto;
-}
-.top{
-    margin: 15px 30px;
+    margin: 25px 45px;
 }
 .logo{
-    width: 15%;
+    width: 200px;
+    margin: 20px 30px;
 }
 .middle{
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
-.image, .content{
-    margin: 30px;
+    column-gap: 30px;
+    padding: 10px 30px;
 }
 .image{
-    width: 85%;
+    width: 100%;
     min-width: 500px;
 }
 .content{
-    padding: 15px;
+    padding: 25px 45px;
 }
 .title{
     font-family: 'Poppins', sans-serif;
@@ -53,7 +50,6 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1em;
-    margin-top: 10px;
 }
 .button:hover{
     background-color: hsl(300, 69%, 71%);
@@ -68,12 +64,13 @@ body{
 .icons{
     width: 1em;
     height: 1em;
-    padding: 7px;
-    font-size: 0.85em;
-    margin: 10px;
+    padding: 1em;
+    font-size: 1em;
     border: 1px solid white;
-    border-radius: 15px;
+    border-radius: 50%;
     text-align: center;
+    margin: 0 7px;
+    
 }
 .icons:hover{
     color:hsl(300, 69%, 71%);
